@@ -13,6 +13,5 @@ gstreamer for ASR backend
 ```
 (docker) > /opt/start.sh -y /opt/models/sample_nnet2.yaml
 ```
-4.
-Verify that `grep ERROR /opt/worker.log` shows no output. If it does, try checking the configuration and replacing relative paths with absolute paths.
+4. Verify that `grep ERROR /opt/worker.log` shows no output. If it does, try checking the configuration and replacing relative paths with absolute paths.
 
