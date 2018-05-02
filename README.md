@@ -7,7 +7,7 @@ gstreamer for ASR backend
 
 2. Start the docker 
 ```
-> docker run -it -p 8080:80 -v <path_to_model>:/opt/models jcsilva/docker-kaldi-gstreamer-server:latest /bin/bash
+> docker run -it -p 8080:80 -v $(pwd):/opt/models jcsilva/docker-kaldi-gstreamer-server:latest /bin/bash
 ```
 3. Start the server
 ```
