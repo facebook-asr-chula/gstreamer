@@ -1,7 +1,6 @@
 !SIL !SIL SIL_S
 <eps> <eps> SIL
 กัน กัน k_B a_I n^_E
-กี่ กี่ k_B ii_E
 กี่คน กี่คน k_B ii_I kh_I o_I n^_E
 ขอ ขอ kh_B @@_E
 ของ ของ kh_B @@_I ng^_E
