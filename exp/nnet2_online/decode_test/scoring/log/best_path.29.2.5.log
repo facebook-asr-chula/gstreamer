@@ -1,0 +1,112 @@
+# lattice-scale --inv-acoustic-scale=29 "ark:gunzip -c exp/nnet2_online/decode_test/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=2.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_test/scoring/29.2.5.tra 
+# Started at Thu May  3 06:56:41 UTC 2018
+#
+lattice-add-penalty --word-ins-penalty=2.5 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=29 'ark:gunzip -c exp/nnet2_online/decode_test/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_test/scoring/29.2.5.tra 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 131, best cost 28.4085 + -32.2659 = -3.85736 over 337 frames.
+131 เรา ชอบ เพจ อะไร นะ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 132, best cost 30.9363 + -22.5507 = 8.38566 over 348 frames.
+132 เรา ชอบ เพจ อะไร หรอ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 133, best cost 44.3023 + -30.537 = 13.7653 over 307 frames.
+133 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 134, best cost 49.7334 + -48.1134 = 1.61998 over 435 frames.
+134 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 135, best cost 46.296 + -43.6411 = 2.65498 over 421 frames.
+135 โพสต์ ล่าสุด มี ความคิดเห็น อะไร อะ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 136, best cost 38.0965 + -42.8334 = -4.73697 over 319 frames.
+136 ขอ ดู เพื่อน ของ เพื่อน นะ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 137, best cost 35.674 + -44.562 = -8.88793 over 339 frames.
+137 ขอ ดู เพื่อน ของ เรา ที 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 138, best cost 31.6155 + -64.1685 = -32.553 over 576 frames.
+138 ขอ ดู จำนวน ถูกใจ ของ เพจ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 139, best cost 37.8078 + -34.5114 = 3.29644 over 309 frames.
+139 เพจ มี โพสต์ อะไร ไป 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 140, best cost 36.3455 + -20.2759 = 16.0696 over 263 frames.
+140 เพื่อน เช็คอิน ที่ ไหน หรอ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 101, best cost 38.4404 + -57.3497 = -18.9093 over 400 frames.
+101 ขอ ดู เพื่อน ของ เรา เพจ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 102, best cost 49.1701 + -65.6027 = -16.4326 over 501 frames.
+102 ขอ ดู จำนวน ถูกใจ ของ เพจ สิ เฟซ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 103, best cost 39.4216 + -39.8556 = -0.433952 over 375 frames.
+103 เพจ มี โพสต์ อะไร เล่น เฟซ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 104, best cost 40.4693 + -36.9887 = 3.48057 over 367 frames.
+104 เพื่อน ใช้ อะไร เล่น เฟซ เฟซ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 105, best cost 45.7452 + -39.8718 = 5.87347 over 415 frames.
+105 เพื่อน โพสต์ อะไร หรอ เพจ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 106, best cost 38.7988 + -39.3182 = -0.519459 over 306 frames.
+106 เพื่อน ชอบ เพจ อะไร เล่น เฟซ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 107, best cost 38.116 + -34.7772 = 3.33881 over 324 frames.
+107 เรา โพสต์ อะไร ล่าสุด 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 108, best cost 55.1468 + -59.0953 = -3.94857 over 469 frames.
+108 โพสต์ ล่าสุด เพจ ชอบ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 109, best cost 61.419 + -63.442 = -2.02304 over 478 frames.
+109 โพสต์ ล่าสุด มี คน แชร์ กี่คน เพจ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 110, best cost 62.2597 + -72.0577 = -9.79799 over 508 frames.
+110 โพสต์ ล่าสุด มี คน ถูกใจ เพจ เฟซ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 121, best cost 40.5881 + -33.6908 = 6.89732 over 256 frames.
+121 โพสต์ ล่าสุด มี คน แชร์ กี่คน 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 122, best cost 41.9365 + -42.8164 = -0.879898 over 336 frames.
+122 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 123, best cost 40.4392 + -40.9608 = -0.521606 over 330 frames.
+123 โพสต์ ล่าสุด มี ความคิดเห็น อะไร บ้าง 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 124, best cost 26.5955 + -27.437 = -0.841522 over 258 frames.
+124 ขอ ดู เพื่อน ของ เพื่อน 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 125, best cost 21.1717 + -23.5856 = -2.41391 over 201 frames.
+125 ขอ ดู เพื่อน ของ เรา สิ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 126, best cost 38.8636 + -45.1287 = -6.26516 over 313 frames.
+126 ขอ ดู จำนวน ถูกใจ ของ เพจ หน่อย 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 127, best cost 33.9575 + -27.9927 = 5.96484 over 237 frames.
+127 เพจ มี โพสต์ อะไร ไป 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 128, best cost 34.9243 + -23.0296 = 11.8948 over 246 frames.
+128 เพื่อน เช็คอิน ที่ ไหน ละ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 129, best cost 29.3709 + -22.0263 = 7.34465 over 192 frames.
+129 เพื่อน โพสต์ อะไร หรอ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 130, best cost 24.7986 + -28.3391 = -3.54051 over 274 frames.
+130 เพื่อน ชอบ เพจ อะไร หรอ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 141, best cost 39.7163 + -31.9147 = 7.80161 over 317 frames.
+141 เรา โพสต์ อะไร ชอบ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 142, best cost 36.7315 + -36.6475 = 0.083992 over 298 frames.
+142 เรา ชอบ เพจ อะไร เพจ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 143, best cost 24.0402 + -23.9296 = 0.110586 over 270 frames.
+143 เรา ชอบ เพจ อะไร นะ 
+LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 144, best cost 43.1669 + -30.3861 = 12.7808 over 326 frames.
+144 โพสต์ ล่าสุด มี คน ที 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 145, best cost 53.2675 + -51.573 = 1.6945 over 392 frames.
+145 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ที 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 146, best cost 57.1292 + -59.5163 = -2.38708 over 401 frames.
+146 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ล่าสุด 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 147, best cost 51.8174 + -56.2522 = -4.43472 over 439 frames.
+147 โพสต์ ล่าสุด มี ความคิดเห็น อะไร บ้าง เพจ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 148, best cost 30.4769 + -37.2151 = -6.73816 over 326 frames.
+148 ขอ ดู เพื่อน ของ เพื่อน ที 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 149, best cost 30.0959 + -39.1025 = -9.00666 over 307 frames.
+149 ขอ ดู เพื่อน ของ เรา ที 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 150, best cost 24.2306 + -41.1138 = -16.8831 over 398 frames.
+150 ขอ ดู จำนวน ถูกใจ ของ เพจ สิ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 111, best cost 39.9258 + -38.1686 = 1.75721 over 352 frames.
+111 โพสต์ ล่าสุด มี ความคิดเห็น อะไร หรอ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 112, best cost 33.613 + -36.1731 = -2.5601 over 264 frames.
+112 ขอ ดู เพื่อน ของ เพื่อน นะ 
+LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 50 lattices.
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 113, best cost 39.4969 + -34.7017 = 4.79522 over 303 frames.
+113 ขอ ดู เพื่อน ของ เรา สิ บ้าง 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 114, best cost 22.1191 + -30.629 = -8.50984 over 351 frames.
+114 ขอ จำนวน ถูกใจ ของ เพจ สิ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 115, best cost 31.3134 + -33.2075 = -1.8941 over 265 frames.
+115 เพจ มี โพสต์ อะไร หรอ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 116, best cost 25.97 + -22.5846 = 3.38544 over 301 frames.
+116 เพื่อน ชอบ เพจ อะไร นะ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 117, best cost 29.5727 + -26.4472 = 3.12545 over 253 frames.
+117 เพื่อน โพสต์ อะไร หรอ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 118, best cost 23.3055 + -26.6332 = -3.32772 over 235 frames.
+118 เพื่อน ชอบ เพจ อะไร หรอ 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 119, best cost 25.812 + -24.4678 = 1.34416 over 241 frames.
+119 เรา โพสต์ อะไร 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 120, best cost 25.7994 + -26.4215 = -0.622147 over 297 frames.
+120 โพสต์ ล่าสุด แชร์ กี่คน 
+LOG (lattice-best-path:main():lattice-best-path.cc:124) Overall score per frame is -0.0027099 = 0.111376 [graph] + -0.114086 [acoustic] over 16776 frames.
+LOG (lattice-best-path:main():lattice-best-path.cc:128) Done 50 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu May  3 06:56:41 UTC 2018, elapsed time 0 seconds

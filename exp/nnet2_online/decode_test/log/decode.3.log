@@ -1,5 +1,5 @@
 # online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/nnet2_online/graph/words.txt exp/nnet2_online/final.mdl exp/nnet2_online/graph/HCLG.fst ark:exp/nnet2_online/decode_test/per_utt/utt2spk.3 "ark,s,cs:wav-copy scp,p:data/test/split5/3/wav.scp ark:- |" "ark:|gzip -c > exp/nnet2_online/decode_test/lat.3.gz" 
-# Started at Wed May  2 18:31:26 UTC 2018
+# Started at Thu May  3 06:56:18 UTC 2018
 #
 online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/nnet2_online/graph/words.txt exp/nnet2_online/final.mdl exp/nnet2_online/graph/HCLG.fst ark:exp/nnet2_online/decode_test/per_utt/utt2spk.3 'ark,s,cs:wav-copy scp,p:data/test/split5/3/wav.scp ark:- |' 'ark:|gzip -c > exp/nnet2_online/decode_test/lat.3.gz' 
 LOG (online2-wav-nnet2-latgen-faster:ComputeDerivedVars():ivector-extractor.cc:182) Computing derived variables for iVector extractor
@@ -24,13 +24,13 @@ LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:2
 129 เพื่อน โพสต์ อะไร หรอ 
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 129
 LOG (wav-copy:main():wav-copy.cc:56) Copied 10 wave files
-130 เพื่อน ชอบ เพจ อะไร 
+130 เพื่อน ชอบ เพจ อะไร หรอ 
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 130
-LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.05634 (note: this cannot be less than one.)
-LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 0.149863 seconds.
-LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 67.2331
-LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 0.20161 seconds for utterance '124'
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.04748 (note: this cannot be less than one.)
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 0.126306 seconds.
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 66.632
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 0.217998 seconds for utterance '124'
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:278) Decoded 10 utterances, 0 with errors.
-LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:280) Overall likelihood per frame was 0.255788 per frame over 2643 frames.
-# Accounting: time=11 threads=1
-# Ended (code 0) at Wed May  2 18:31:37 UTC 2018, elapsed time 11 seconds
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:280) Overall likelihood per frame was 0.274067 per frame over 2643 frames.
+# Accounting: time=10 threads=1
+# Ended (code 0) at Thu May  3 06:56:28 UTC 2018, elapsed time 10 seconds

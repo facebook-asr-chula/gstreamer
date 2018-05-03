@@ -1,5 +1,5 @@
 # lattice-scale --inv-acoustic-scale=19 "ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/19.1.5.tra 
-# Started at Thu May  3 05:44:03 UTC 2018
+# Started at Thu May  3 06:56:15 UTC 2018
 #
 lattice-add-penalty --word-ins-penalty=1.5 ark:- ark:- 
 lattice-scale --inv-acoustic-scale=19 'ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|' ark:- 
@@ -72,6 +72,7 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 043, best c
 043 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 044, best cost 46.928 + -81.129 = -34.201 over 420 frames.
 044 โพสต์ ล่าสุด มี ความคิดเห็น อะไร ไป เพื่อน 
+LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 045, best cost 15.0845 + -42.7504 = -27.6659 over 244 frames.
 045 ขอ เพจ ที่ เรา ชอบ สิ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 046, best cost 23.2837 + -56.6774 = -33.3936 over 323 frames.
@@ -88,7 +89,6 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 011, best c
 011 ขอ ดู จำนวน ถูกใจ ของ เพจ สิ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 012, best cost 27.58 + -52.9489 = -25.3689 over 295 frames.
 012 ขอ หนังสือ ที่ เพื่อน ชอบ กี่คน 
-LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 013, best cost 25.4312 + -42.3137 = -16.8826 over 295 frames.
 013 เพจ มี โพสต์ อะไร บ้าง 
@@ -109,4 +109,4 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 020, best c
 LOG (lattice-best-path:main():lattice-best-path.cc:124) Overall score per frame is -0.0896493 = 0.0904814 [graph] + -0.180131 [acoustic] over 16677 frames.
 LOG (lattice-best-path:main():lattice-best-path.cc:128) Done 50 lattices, failed for 0
 # Accounting: time=0 threads=1
-# Ended (code 0) at Thu May  3 05:44:03 UTC 2018, elapsed time 0 seconds
+# Ended (code 0) at Thu May  3 06:56:15 UTC 2018, elapsed time 0 seconds

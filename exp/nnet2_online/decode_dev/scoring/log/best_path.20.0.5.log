@@ -1,5 +1,5 @@
 # lattice-scale --inv-acoustic-scale=20 "ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/20.0.5.tra 
-# Started at Thu May  3 05:44:02 UTC 2018
+# Started at Thu May  3 06:56:13 UTC 2018
 #
 lattice-scale --inv-acoustic-scale=20 'ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|' ark:- 
 lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/20.0.5.tra 
@@ -66,7 +66,6 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 030, best c
 030 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 041, best cost 28.0522 + -45.4092 = -17.357 over 292 frames.
 041 เรา เช็คอิน ที่ ไหน ล่าสุด 
-LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 042, best cost 23.6159 + -48.6828 = -25.0669 over 275 frames.
 042 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 043, best cost 25.2173 + -57.4025 = -32.1852 over 308 frames.
@@ -75,6 +74,7 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 044, best c
 044 โพสต์ ล่าสุด มี ความคิดเห็น อะไร ไป เพื่อน 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 045, best cost 9.08448 + -40.6128 = -31.5284 over 244 frames.
 045 ขอ เพจ ที่ เรา ชอบ สิ 
+LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 046, best cost 17.2837 + -53.8435 = -36.5598 over 323 frames.
 046 ขอ ดู เพื่อน ของ เรา ที 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 047, best cost 8.91964 + -54.2805 = -45.3608 over 331 frames.
@@ -109,4 +109,4 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 020, best c
 LOG (lattice-best-path:main():lattice-best-path.cc:124) Overall score per frame is -0.0984639 = 0.0723797 [graph] + -0.170844 [acoustic] over 16677 frames.
 LOG (lattice-best-path:main():lattice-best-path.cc:128) Done 50 lattices, failed for 0
 # Accounting: time=0 threads=1
-# Ended (code 0) at Thu May  3 05:44:02 UTC 2018, elapsed time 0 seconds
+# Ended (code 0) at Thu May  3 06:56:13 UTC 2018, elapsed time 0 seconds

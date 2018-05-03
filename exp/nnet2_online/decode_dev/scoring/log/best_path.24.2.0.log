@@ -1,9 +1,9 @@
 # lattice-scale --inv-acoustic-scale=24 "ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=2.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/24.2.0.tra 
-# Started at Thu May  3 05:44:04 UTC 2018
+# Started at Thu May  3 06:56:15 UTC 2018
 #
-lattice-scale --inv-acoustic-scale=24 'ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|' ark:- 
-lattice-add-penalty --word-ins-penalty=2.0 ark:- ark:- 
 lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/24.2.0.tra 
+lattice-add-penalty --word-ins-penalty=2.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=24 'ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|' ark:- 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 031, best cost 44.8968 + -56.6701 = -11.7733 over 383 frames.
 031 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 032, best cost 47.3324 + -48.2593 = -0.926907 over 311 frames.
@@ -66,13 +66,13 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 030, best c
 030 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 041, best cost 35.5522 + -37.841 = -2.2888 over 292 frames.
 041 เรา เช็คอิน ที่ ไหน ล่าสุด 
-LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 042, best cost 34.1159 + -40.569 = -6.45309 over 275 frames.
 042 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 043, best cost 35.7173 + -47.8354 = -12.1181 over 308 frames.
 043 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 044, best cost 50.428 + -64.2271 = -13.7992 over 420 frames.
 044 โพสต์ ล่าสุด มี ความคิดเห็น อะไร ไป เพื่อน 
+LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 045, best cost 18.0845 + -33.844 = -15.7596 over 244 frames.
 045 ขอ เพจ ที่ เรา ชอบ สิ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 046, best cost 26.2837 + -44.8696 = -18.5859 over 323 frames.
@@ -89,11 +89,11 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 011, best c
 011 ขอ ดู จำนวน ถูกใจ ของ เพจ สิ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 012, best cost 30.58 + -41.9179 = -11.3379 over 295 frames.
 012 ขอ หนังสือ ที่ เพื่อน ชอบ กี่คน 
+LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 013, best cost 25.034 + -31.0753 = -6.04134 over 295 frames.
 013 เพจ มี โพสต์ อะไร 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 014, best cost 25.2634 + -25.5631 = -0.299732 over 253 frames.
 014 เพื่อน เช็คอิน ที่ ไหน 
-LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 015, best cost 26.4141 + -33.3705 = -6.95636 over 325 frames.
 015 เพื่อน ใช้ อะไร เล่น เฟซ นะ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 016, best cost 25.0115 + -38.2053 = -13.1938 over 310 frames.
@@ -108,5 +108,5 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 020, best c
 020 โพสต์ ล่าสุด มี ความคิดเห็น อะไร หรอ 
 LOG (lattice-best-path:main():lattice-best-path.cc:124) Overall score per frame is -0.0433359 = 0.0991223 [graph] + -0.142458 [acoustic] over 16677 frames.
 LOG (lattice-best-path:main():lattice-best-path.cc:128) Done 50 lattices, failed for 0
-# Accounting: time=0 threads=1
-# Ended (code 0) at Thu May  3 05:44:04 UTC 2018, elapsed time 0 seconds
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu May  3 06:56:16 UTC 2018, elapsed time 1 seconds

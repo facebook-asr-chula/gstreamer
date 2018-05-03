@@ -1,9 +1,9 @@
 # lattice-scale --inv-acoustic-scale=11 "ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/11.0.0.tra 
-# Started at Thu May  3 05:44:01 UTC 2018
+# Started at Thu May  3 06:56:12 UTC 2018
 #
+lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/11.0.0.tra 
 lattice-scale --inv-acoustic-scale=11 'ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|' ark:- 
 lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
-lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/11.0.0.tra 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 031, best cost 30.8968 + -123.644 = -92.7471 over 383 frames.
 031 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 032, best cost 35.3324 + -105.293 = -69.9606 over 311 frames.
@@ -72,7 +72,6 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 043, best c
 043 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 044, best cost 36.428 + -140.132 = -103.704 over 420 frames.
 044 โพสต์ ล่าสุด มี ความคิดเห็น อะไร ไป เพื่อน 
-LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 045, best cost 18.3289 + -88.0672 = -69.7382 over 244 frames.
 045 ขอ เพจ ที่ เรา ชอบ ล่าสุด 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 046, best cost 14.2837 + -97.8973 = -83.6136 over 323 frames.
@@ -89,11 +88,12 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 011, best c
 011 ขอ ดู จำนวน ถูกใจ ของ เพจ สิ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 012, best cost 21.7948 + -97.4924 = -75.6976 over 295 frames.
 012 ขอ หนังสือ ที่ เพื่อน ชอบ สิ กี่คน 
-LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 50 lattices.
+LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 013, best cost 17.9312 + -73.0874 = -55.1562 over 295 frames.
 013 เพจ มี โพสต์ อะไร บ้าง 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 014, best cost 22.7179 + -65.5374 = -42.8195 over 253 frames.
 014 เพื่อน เช็คอิน ที่ ไหน ที 
+LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 015, best cost 21.8886 + -84.7021 = -62.8135 over 325 frames.
 015 เพื่อน ใช้ อะไร เล่น เฟซ เฟซ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 016, best cost 15.0115 + -83.357 = -68.3456 over 310 frames.
@@ -109,4 +109,4 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 020, best c
 LOG (lattice-best-path:main():lattice-best-path.cc:124) Overall score per frame is -0.249278 = 0.070621 [graph] + -0.319899 [acoustic] over 16677 frames.
 LOG (lattice-best-path:main():lattice-best-path.cc:128) Done 50 lattices, failed for 0
 # Accounting: time=1 threads=1
-# Ended (code 0) at Thu May  3 05:44:02 UTC 2018, elapsed time 1 seconds
+# Ended (code 0) at Thu May  3 06:56:13 UTC 2018, elapsed time 1 seconds

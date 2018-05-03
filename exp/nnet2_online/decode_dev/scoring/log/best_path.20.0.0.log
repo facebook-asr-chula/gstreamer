@@ -1,9 +1,9 @@
 # lattice-scale --inv-acoustic-scale=20 "ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/20.0.0.tra 
-# Started at Thu May  3 05:44:02 UTC 2018
+# Started at Thu May  3 06:56:13 UTC 2018
 #
-lattice-scale --inv-acoustic-scale=20 'ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|' ark:- 
 lattice-best-path --word-symbol-table=exp/nnet2_online/graph/words.txt ark:- ark,t:exp/nnet2_online/decode_dev/scoring/20.0.0.tra 
 lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=20 'ark:gunzip -c exp/nnet2_online/decode_dev/lat.*.gz|' ark:- 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 031, best cost 30.8968 + -68.0042 = -37.1073 over 383 frames.
 031 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 032, best cost 35.3324 + -57.9111 = -22.5788 over 311 frames.
@@ -70,7 +70,6 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 042, best c
 042 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 043, best cost 21.7173 + -57.4025 = -35.6852 over 308 frames.
 043 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
-LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 044, best cost 36.428 + -77.0726 = -40.6446 over 420 frames.
 044 โพสต์ ล่าสุด มี ความคิดเห็น อะไร ไป เพื่อน 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 045, best cost 6.08448 + -40.6128 = -34.5284 over 244 frames.
@@ -83,19 +82,20 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 048, best c
 048 ขอ หนังสือ ที่ เพื่อน ชอบ ที 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 049, best cost 19.2208 + -51.5635 = -32.3427 over 345 frames.
 049 เพจ มี โพสต์ อะไร บ้าง 
+LOG (lattice-scale:main():lattice-scale.cc:90) Done 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 050, best cost 16.3922 + -45.0999 = -28.7077 over 301 frames.
 050 เพื่อน ใช้ อะไร เล่น เฟซ เพจ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 011, best cost 7.96846 + -59.2443 = -51.2759 over 393 frames.
 011 ขอ ดู จำนวน ถูกใจ ของ เพจ สิ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 012, best cost 21.7948 + -53.6208 = -31.826 over 295 frames.
 012 ขอ หนังสือ ที่ เพื่อน ชอบ สิ กี่คน 
+LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 013, best cost 17.9312 + -40.1981 = -22.2669 over 295 frames.
 013 เพจ มี โพสต์ อะไร บ้าง 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 014, best cost 17.2634 + -30.6757 = -13.4124 over 253 frames.
 014 เพื่อน เช็คอิน ที่ ไหน 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 015, best cost 19.3637 + -45.1261 = -25.7625 over 325 frames.
 015 เพื่อน ใช้ อะไร เล่น เฟซ เฟซ อะ 
-LOG (lattice-add-penalty:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 50 lattices.
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 016, best cost 15.0115 + -45.8464 = -30.8349 over 310 frames.
 016 เพื่อน ชอบ เพจ อะไร หรอ 
 LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 017, best cost 28.1365 + -41.3334 = -13.1969 over 274 frames.
@@ -109,4 +109,4 @@ LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance 020, best c
 LOG (lattice-best-path:main():lattice-best-path.cc:124) Overall score per frame is -0.107529 = 0.0635511 [graph] + -0.17108 [acoustic] over 16677 frames.
 LOG (lattice-best-path:main():lattice-best-path.cc:128) Done 50 lattices, failed for 0
 # Accounting: time=0 threads=1
-# Ended (code 0) at Thu May  3 05:44:02 UTC 2018, elapsed time 0 seconds
+# Ended (code 0) at Thu May  3 06:56:13 UTC 2018, elapsed time 0 seconds
