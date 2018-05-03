@@ -1,11 +1,11 @@
 # online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/nnet2_online/graph/words.txt exp/nnet2_online/final.mdl exp/nnet2_online/graph/HCLG.fst ark:exp/nnet2_online/decode_dev/per_utt/utt2spk.1 "ark,s,cs:wav-copy scp,p:data/dev/split5/1/wav.scp ark:- |" "ark:|gzip -c > exp/nnet2_online/decode_dev/lat.1.gz" 
-# Started at Wed May  2 18:58:42 UTC 2018
+# Started at Thu May  3 05:43:34 UTC 2018
 #
 online2-wav-nnet2-latgen-faster --online=true --do-endpointing=false --config=exp/nnet2_online/conf/online_nnet2_decoding.conf --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.1 --word-symbol-table=exp/nnet2_online/graph/words.txt exp/nnet2_online/final.mdl exp/nnet2_online/graph/HCLG.fst ark:exp/nnet2_online/decode_dev/per_utt/utt2spk.1 'ark,s,cs:wav-copy scp,p:data/dev/split5/1/wav.scp ark:- |' 'ark:|gzip -c > exp/nnet2_online/decode_dev/lat.1.gz' 
 LOG (online2-wav-nnet2-latgen-faster:ComputeDerivedVars():ivector-extractor.cc:182) Computing derived variables for iVector extractor
 LOG (online2-wav-nnet2-latgen-faster:ComputeDerivedVars():ivector-extractor.cc:203) Done.
 wav-copy scp,p:data/dev/split5/1/wav.scp ark:- 
-031 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน 
+031 โพสต์ ล่าสุด มี คน ถูกใจ กี่คน ละ 
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 031
 032 โพสต์ ล่าสุด มี ความคิดเห็น อะไร ไป 
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 032
@@ -19,18 +19,18 @@ LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:2
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 036
 037 เพจ มี โพสต์ อะไร บ้าง 
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 037
-038 เพื่อน ใช้ กี่คน ที่ ไหน 
+038 เพื่อน เช็คอิน ที่ ไหน 
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 038
 039 เพื่อน ใช้ อะไร เล่น เฟซ อะ 
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 039
 LOG (wav-copy:main():wav-copy.cc:56) Copied 10 wave files
-040 เพื่อน ชอบ เพจ อะไร อะ 
+040 เพื่อน ชอบ เพจ อะไร นะ 
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:272) Decoded utterance 040
-LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.05835 (note: this cannot be less than one.)
-LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 0.183148 seconds.
-LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 67.2199
-LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 0.27951 seconds for utterance '036'
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:36) Timing stats: real-time factor was 1.0491 (note: this cannot be less than one.)
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:38) Average delay was 0.1541 seconds.
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:42) Percentage of time spent idling was 64.0169
+LOG (online2-wav-nnet2-latgen-faster:Print():online-timing.cc:44) Longest delay was 0.309708 seconds for utterance '036'
 LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:278) Decoded 10 utterances, 0 with errors.
-LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:280) Overall likelihood per frame was 0.254753 per frame over 3118 frames.
+LOG (online2-wav-nnet2-latgen-faster:main():online2-wav-nnet2-latgen-faster.cc:280) Overall likelihood per frame was 0.279774 per frame over 3118 frames.
 # Accounting: time=13 threads=1
-# Ended (code 0) at Wed May  2 18:58:55 UTC 2018, elapsed time 13 seconds
+# Ended (code 0) at Thu May  3 05:43:47 UTC 2018, elapsed time 13 seconds

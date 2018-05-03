@@ -1,4 +1,4 @@
 compute-wer --text --mode=present ark:exp/nnet2_online/decode_dev/scoring/test_filt.txt ark,p:- 
-%WER 15.79 [ 45 / 285, 11 ins, 7 del, 27 sub ]
-%SER 56.00 [ 28 / 50 ]
+%WER 20.70 [ 59 / 285, 23 ins, 2 del, 34 sub ]
+%SER 72.00 [ 36 / 50 ]
 Scored 50 sentences, 0 not present in hyp.
